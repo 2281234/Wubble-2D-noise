@@ -90,14 +90,13 @@ char readChar(int a) {
     return 0;
 }
 
-int envirContains(char cell) {
-    int quantity = 0;
+bool envirContains(char cell) {
     for (int i = 1; i <= 9; i++) {
         if (readChar(i) == cell) {
-            quantity++;
+            return 1;
         }
     }
-    return quantity;
+    return 0;
 }
 
 void checkEnvir() {
