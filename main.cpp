@@ -180,7 +180,6 @@ void creatPNG() {
             }
         }
     }
-    srand(time(0));
     std::string fileName = "Noise.png";
     unsigned int error = lodepng::encode(fileName.c_str(), image, X, Y);
     if (error) {
